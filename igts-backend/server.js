@@ -69,7 +69,7 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
-const MONGO_URI = 'mongodb+srv://gauravawagan:root@cluster0.vb5lba8.mongodb.net/igts_db?appName=Cluster0';
+const MONGO_URI = '';
 mongoose.connect(MONGO_URI)
   .then(() => console.log('✅ MongoDB Connected'))
   .catch(err => console.error('❌ DB Error:', err));
